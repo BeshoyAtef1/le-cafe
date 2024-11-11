@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>le café </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/5.png" type="image/png">
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#home">HOME</a>
+            </li>
+            <li>
+                <a href="#about">ABOUT</a>
+            </li>
+            <li>
+                <a href="#menu"> MENU</a>
+            </li>
+            <li>
+                <a href="#where"> WHERE</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="backgroundimg" id="home">
+        <div class="thecafe">
+            <span>le café
+            </span>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="abouttext">
+            <Span class="about"> ABOUT THE CAFE </Span>
+            <div>
+                <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches,
+                    as well as a selection of sides and salads and other good stuff.</p>
+            </div>
+            <div class="abouttext2">
+                <div class="abouttext3">
+                    <p>
+                        <i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the
+                            new sweet.
+                        </i>
+                    </p>
+                    <p>Chef, Coffeeist and Owner: Liam Brown</p>
+                </div>
+            </div>
+            <div>
+                <img src="img/2.jpg" width="100%" alt="">
+                <p>
+                    <strong>Address:</strong> 15 Adr street, 5015, NY</p>
+                <p>
+                    <strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- //////////////////////////////////////////////////////////// -->
+
+
+    <div id="menu">
+        <div class="menu0">
+            <Span class="menu">THE MENU </Span>
+
+
+            <table>
+                <!-- التابات باستخدام خلايا الجدول -->
+                <tr class="shadow">
+                    <th class="thead">
+                        <input class="button" type="button" value="Eat" onclick="hideContentDrink()">
+                    </th>
+                    <th>
+                        <input class="button" type="button" value="Drink" onclick="hideContentEat()">
+                </tr>
+
+                <!-- محتوى التابات -->
+                <tr id="eat">
+                    <td colspan="2">
+                        <h5>Bread Basket</h5>
+                        <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                        <br>
+                        <h5>Honey Almond Granola with Fruits</h5>
+                        <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                        <br>
+                        <h5>Belgian Waffle</h5>
+                        <p>Vanilla flavored batter with malted flour 7.50</p>
+                        <br>
+                        <h5>Scrambled eggs</h5>
+                        <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                        <br>
+
+                    </td>
+                </tr>
+
+                <tr id="Drink">
+                    <td colspan="2">
+                        <h5>Coffee</h5>
+                        <p>Regular coffee 2.50</p>
+                        <br>
+                        <h5>Chocolato</h5>
+                        <p>Chocolate espresso with milk 4.50</p>
+                        <br>
+                        <h5>Corretto</h5>
+                        <p>Whiskey and coffee 5.00</p>
+                        <br>
+                        <h5>Iced tea</h5>
+                        <p>Hot tea, except not hot 3.00</p>
+                        <br>
+                        <h5>Soda</h5>
+                        <p>Coke, Sprite, Fanta, etc. 2.50</p>
+                    </td>
+                </tr>
+            </table>
+
+
+
+            <div>
+                <img src="img/3.jpg" width="100%" alt="">
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="where">
+        <div class="WHEREtofindus">
+            <Span class="where">WHERE TO FIND US </Span>
+        </div>
+        <div>
+            <p>Find us at some address at some place.</p>
+            <img src="img/4.jpg" width="100%" alt="">
+            <p>
+                <span class="fyi">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we
+                will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+            <br>
+            <p>
+                <strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+            <br>
+            <form action="index.html" method="get">
+                <p>
+                    <input class="inputform" type="text" name="Name" placeholder="Name" required>
+                </p>
+                <p>
+                    <input class="inputform" type="number"name="How many people" placeholder="How many people" required>
+                </p>
+                <p>
+                    <input class="inputform" type="datetime-local" name="Date and time" placeholder="Date and time" required value="2020-11-16T20:00">
+                </p>
+                <p>
+                    <input class="inputform" type="text"name="Message \ Special requirements" placeholder="Message \ Special requirements" required>
+                </p>
+                <p>
+                    <button class="buttoninputform" type="submit">SEND MESSAGE</button>
+                </p>
+            </form>
+        </div>
+    </div>
+    <div class="top">
+
+        <a href="#top">
+            <img style="width:5%;" src="img/R.png" alt="home">
+        </a>
+
+    </div>
+    <script>
+        function hideContentDrink() {
+            document.getElementById("Drink").style.display = "none";
+            document.getElementById("eat").style.display = "table-row ";
+
+        }
+        function hideContentEat() {
+            document.getElementById("Drink").style.display = "table-row ";
+            document.getElementById("eat").style.display = "none";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
